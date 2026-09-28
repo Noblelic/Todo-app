@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Dashboard</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Main Dashboard Layout -->
+    <div class="dashboard-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h2 class="logo">TaskFlow</h2>
+
+            <nav class="sidebar-nav">
+
+                <a href="#" class="active">
+                    Dashboard
+                </a>
+
+                <a href="#">
+                    My Tasks
+                </a>
+
+                <a href="#">
+                    Completed
+                </a>
+
+                <a href="#">
+                    Settings
+                </a>
+
+            </nav>
+
+            <a href="index.html" class="logout-link">
+                Logout
+            </a>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+
+            <!-- Top Header -->
+            <header class="dashboard-header">
+
+                <div>
+                    <h1>Good Morning!</h1>
+
+                    <p>
+                        Here's an overview of your tasks.
+                    </p>
+                </div>
+
+                <div class="user-profile">
+                    <span class="profile-icon">U</span>
+
+                    <span>Username</span>
+                </div>
+
+            </header>
+
+
+            <!-- Statistics Cards -->
+            <section class="stats-container">
+
+                <div class="stat-card">
+                    <h3>Total Tasks</h3>
+
+                    <p>12</p>
+                </div>
+
+                <div class="stat-card pending">
+                    <h3>Pending Tasks</h3>
+
+                    <p>5</p>
+                </div>
+
+                <div class="stat-card completed">
+                    <h3>Completed Tasks</h3>
+
+                    <p>7</p>
+                </div>
+
+            </section>
+
+
+            <!-- Tasks Section -->
+            <section class="tasks-section">
+
+                <div class="tasks-header">
+
+                    <h2>My Tasks</h2>
+
+                    <button class="add-task-btn">
+                        + Add Task
+                    </button>
+
+                </div>
+
+
+                <!-- Task Item 1 -->
+                <div class="task-item">
+
+                    <div class="task-info">
+
+                        <h3>Complete project design</h3>
+
+                        <p>Finish the To-Do app interface.</p>
+
+                    </div>
+
+                    <span class="task-status pending-status">
+                        Pending
+                    </span>
+
+                </div>
+
+
+                <!-- Task Item 2 -->
+                <div class="task-item">
+
+                    <div class="task-info">
+
+                        <h3>Study HTML and CSS</h3>
+
+                        <p>Practice HTML structure and CSS styling.</p>
+
+                    </div>
+
+                    <span class="task-status completed-status">
+                        Completed
+                    </span>
+
+                </div>
+
+
+                <!-- Task Item 3 -->
+                <div class="task-item">
+
+                    <div class="task-info">
+
+                        <h3>Plan tomorrow's tasks</h3>
+
+                        <p>Prepare a task list for tomorrow.</p>
+
+                    </div>
+
+                    <span class="task-status pending-status">
+                        Pending
+                    </span>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
