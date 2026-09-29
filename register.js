@@ -23,9 +23,10 @@ let newuser = {
 }
 
 users.push(newuser)
+localStorage.setItem('users', JSON.stringify(users))
 alert('account successfully created')
 form.reset()
-window.location.href = "dashboard.html"
+window.location.href = "index.html"
 }else{
     alert('comfirm password or email or username')
 }
