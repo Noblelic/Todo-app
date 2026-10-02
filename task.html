@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Add Task</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="task-page">
+
+        <section class="task-form-section">
+
+            <div class="task-form-header">
+                <h2>Create New Task</h2>
+                <p>Add a new task and keep your work organized.</p>
+            </div>
+
+            <form class="task-form">
+
+                <div class="form-group">
+                    <label for="task-title">Task Title</label>
+
+                    <input
+                        type="text"
+                        id="task-title"
+                        placeholder="Enter task title"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="task-description">Description</label>
+
+                    <textarea
+                        id="task-description"
+                        placeholder="Describe your task..."
+                        rows="4"
+                    ></textarea>
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="priority">Priority</label>
+
+                        <select id="priority">
+                            <option value="">Select priority</option>
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="category">Category</label>
+
+                        <select id="category">
+                            <option value="">Select category</option>
+                            <option value="work">Work</option>
+                            <option value="school">School</option>
+                            <option value="personal">Personal</option>
+                            <option value="shopping">Shopping</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="due-date">Due Date</label>
+
+                        <input type="date" id="due-date">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="due-time">Due Time</label>
+
+                        <input type="time" id="due-time">
+                    </div>
+
+                </div>
+
+
+                <div class="task-form-buttons">
+
+                    <button type="button" class="cancel-btn">
+                        Cancel
+                    </button>
+
+                    <button type="submit" class="save-task-btn">
+                        + Add Task
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+   <script src="task.js"></script>
+</html>

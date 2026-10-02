@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - My Tasks</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+                <h2>TaskFlow</h2>
+            </div>
+
+            <nav class="sidebar-nav">
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="tasks.html" class="active">
+                    My Tasks
+                </a>
+
+                <a href="#">
+                    Completed
+                </a>
+
+                <a href="#">
+                    Settings
+                </a>
+
+                <a href="index.html">
+                    Logout
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="tasks-main">
+
+            <!-- Header -->
+            <div class="tasks-header">
+
+                <div>
+                    <h1>My Tasks</h1>
+                    <p>Manage and organize all your tasks.</p>
+                </div>
+
+                <a href="task.html" class="add-task-btn">
+                    + Add Task
+                </a>
+
+            </div>
+
+
+            <!-- Search and Filters -->
+            <div class="task-controls">
+
+                <div class="task-search">
+                    <input
+                        type="text"
+                        placeholder="Search tasks..."
+                    >
+                </div>
+
+                <select>
+                    <option value="">All Tasks</option>
+                    <option value="pending">Pending</option>
+                    <option value="completed">Completed</option>
+                </select>
+
+                <select>
+                    <option value="">All Priorities</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+
+            </div>
+
+
+            <!-- Task List -->
+            <section class="tasks-list">
+
+                <!-- Task 1 -->
+                <div class="task-card">
+
+                    <div class="task-check">
+                        <input type="checkbox">
+                    </div>
+
+                    <div class="task-info">
+
+                        <h3>Complete JavaScript Project</h3>
+
+                        <p>
+                            Finish the TaskFlow JavaScript functionality.
+                        </p>
+
+                        <div class="task-meta">
+
+                            <span class="priority high">
+                                High
+                            </span>
+
+                            <span>
+                                Work
+                            </span>
+
+                            <span>
+                                Due: Oct 5, 2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="task-actions">
+
+                        <button class="edit-btn">
+                            Edit
+                        </button>
+
+                        <button class="delete-btn">
+                            Delete
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Task 2 -->
+                <div class="task-card">
+
+                    <div class="task-check">
+                        <input type="checkbox">
+                    </div>
+
+                    <div class="task-info">
+
+                        <h3>Study Database Management</h3>
+
+                        <p>
+                            Review MySQL queries and database relationships.
+                        </p>
+
+                        <div class="task-meta">
+
+                            <span class="priority medium">
+                                Medium
+                            </span>
+
+                            <span>
+                                School
+                            </span>
+
+                            <span>
+                                Due: Oct 7, 2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="task-actions">
+
+                        <button class="edit-btn">
+                            Edit
+                        </button>
+
+                        <button class="delete-btn">
+                            Delete
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Task 3 -->
+                <div class="task-card">
+
+                    <div class="task-check">
+                        <input type="checkbox">
+                    </div>
+
+                    <div class="task-info">
+
+                        <h3>Buy Groceries</h3>
+
+                        <p>
+                            Buy groceries for the week.
+                        </p>
+
+                        <div class="task-meta">
+
+                            <span class="priority low">
+                                Low
+                            </span>
+
+                            <span>
+                                Personal
+                            </span>
+
+                            <span>
+                                Due: Oct 8, 2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="task-actions">
+
+                        <button class="edit-btn">
+                            Edit
+                        </button>
+
+                        <button class="delete-btn">
+                            Delete
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
