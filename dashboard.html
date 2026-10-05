@@ -1,162 +1,113 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>TaskFlow - Dashboard</title>
 
-    <!-- Link to CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Main Dashboard Layout -->
     <div class="dashboard-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2 class="logo">TaskFlow</h2>
 
-        <!-- Sidebar -->
-        <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <a href="#" class="active">Dashboard</a>
+          <a href="tasks.html" class="sidebar-link">My Tasks</a>
+          <a href="pending.html" class="sidebar-link"> Pending</a>
+          <a href="in-progress.html" class="sidebar-link">In Progress </a>
+          <a href="completed.html">Completed</a>
+          <a href="settings.html">Settings</a>
+        </nav>
 
-            <h2 class="logo">TaskFlow</h2>
+        <a href="index.html" class="logout-link"> Logout </a>
+      </aside>
 
-            <nav class="sidebar-nav">
+      <!-- Main Content -->
+      <main class="dashboard-main">
+        <!-- Top Header -->
+        <header class="dashboard-header">
+          <div>
+            <h1>Good Morning!</h1>
 
-                <a href="#" class="active">
-                    Dashboard
-                </a>
+            <p>Here's an overview of your tasks.</p>
+          </div>
 
-                <a href="tasks.html" class="sidebar-link">My Tasks</a>
+          <div class="user-profile">
+            <span class="profile-icon">U</span>
 
-                <a href="#">
-                    Completed
-                </a>
+            <span class="Username">Username</span>
+          </div>
+        </header>
 
-                <a href="#">
-                    Settings
-                </a>
+        <!-- Statistics Cards -->
+        <section class="stats-container">
+          <div class="stat-card">
+            <h3>Total Tasks</h3>
 
-            </nav>
+            <p class="Total">12</p>
+          </div>
 
-            <a href="index.html" class="logout-link">
-                Logout
-            </a>
+          <div class="stat-card pending">
+            <h3>Pending Tasks</h3>
 
-        </aside>
+            <p class="pending">5</p>
+          </div>
 
+          <div class="stat-card completed">
+            <h3>Completed Tasks</h3>
 
-        <!-- Main Content -->
-        <main class="dashboard-main">
+            <p>7</p>
+          </div>
+        </section>
 
-            <!-- Top Header -->
-            <header class="dashboard-header">
+        <!-- Tasks Section -->
+        <section class="tasks-section">
+          <div class="tasks-header">
+            <h2>My Tasks</h2>
 
-                <div>
-                    <h1>Good Morning!</h1>
+            <a href="task.html" class="add-task-btn">Add Task</a>
+          </div>
 
-                    <p>
-                        Here's an overview of your tasks.
-                    </p>
-                </div>
+          <div class="task-item">
+            <div class="task-info">
+              <h3>Complete JavaScript Project</h3>
 
-                <div class="user-profile">
-                    <span class="profile-icon">U</span>
+              <p class="task-description">
+                Finish the JavaScript functionality for the TaskFlow project.
+              </p>
 
-                    <span class="Username">Username</span>
-                </div>
+              <div class="task-details">
+                <span class="priority high"> Priority: High </span>
 
-            </header>
+                <span class="task-status pending-status">
+                  Status: Pending
+                </span>
 
+                <span> Category: School </span>
 
-            <!-- Statistics Cards -->
-            <section class="stats-container">
+                <span> Due Date: Oct 5, 2026 </span>
 
-                <div class="stat-card">
-                    <h3>Total Tasks</h3>
+                <span> Due Time: 5:00 PM </span>
+              </div>
 
-                    <p class="Total">12</p>
-                </div>
+            </div>
 
-                <div class="stat-card pending">
-                    <h3>Pending Tasks</h3>
+          </div>
 
-                    <p class="pending">5</p>
-                </div>
+        </section>
 
-                <div class="stat-card completed">
-                    <h3>Completed Tasks</h3>
-
-                    <p>7</p>
-                </div>
-
-            </section>
-
-
-            <!-- Tasks Section -->
-            <section class="tasks-section">
-
-                <div class="tasks-header">
-
-                    <h2>My Tasks</h2>
-
-                    <a href="task.html" class="add-task-btn">Add Task</a>
-
-                </div>
-
-
-                <!-- Task Item 1 -->
-                <div class="task-item">
-
-                    
-
-                </div>
-
-
-                <!-- Task Item 2 -->
-                <!-- <div class="task-item">
-
-                    <div class="task-info">
-
-                        <h3>Study HTML and CSS</h3>
-
-                        <p>Practice HTML structure and CSS styling.</p>
-
-                    </div>
-
-                    <span class="task-status completed-status">
-                        Completed
-                    </span>
-
-                </div> -->
-
-
-                <!-- Task Item 3 -->
-                <!-- <div class="task-item">
-
-                    <div class="task-info">
-
-                        <h3>Plan tomorrow's tasks</h3>
-
-                        <p>Prepare a task list for tomorrow.</p>
-
-                    </div>
-
-                    <span class="task-status pending-status">
-                        Pending
-                    </span>
-
-                </div> -->
-
-            </section>
-
-        </main>
+      </main>
 
     </div>
+
     <script src="dashboard.js"></script>
-
-</body>
-
+  </body>
+  
 </html>
