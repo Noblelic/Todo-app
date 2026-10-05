@@ -63,10 +63,6 @@ const Add_task = function(Tittle, Des, status){
 
 }
 
-Add_task("buy garry please", "garri is very important")
-Add_task("buy Beans please", "garri is very important")
-Add_task("buy fruit please", "garri is very important")
-Add_task("buy fruit please", "garri is very important")
 
 Total.textContent = Active_user.tasks.length 
 

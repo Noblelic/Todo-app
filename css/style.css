@@ -387,52 +387,89 @@ body {
     background-color: #1d4ed8;
 }
 
-
-/* Task Items */
-
+/* Quick Task View */
 .task-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 0;
-    border-bottom: 1px solid #e5e7eb;
-}
-
-.task-item:last-child {
-    border-bottom: none;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    margin-top: 15px;
 }
 
 .task-info h3 {
-    color: #374151;
-    font-size: 16px;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
+    font-size: 18px;
 }
 
-.task-info p {
-    color: #6b7280;
-    font-size: 13px;
+.task-description {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
 }
 
-
-/* Task Status */
-
-.task-status {
-    font-size: 12px;
-    font-weight: bold;
-    padding: 7px 12px;
-    border-radius: 20px;
-    white-space: nowrap;
+.task-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 14px;
 }
 
-.pending-status {
-    background-color: #fef3c7;
-    color: #92400e;
+.task-details span {
+    background: #f5f5f5;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: #555;
 }
 
-.completed-status {
-    background-color: #dcfce7;
-    color: #166534;
+/* Priority */
+.task-details .priority.high {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+/* Pending Status */
+.task-details .pending-status {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.task-details .priority.medium {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.task-details .priority.low {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.task-details .progress-status {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.task-details .completed-status {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+/* Overview task button */
+
+.task-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.view-all-btn {
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.view-all-btn:hover {
+    text-decoration: underline;
 }
 
 
