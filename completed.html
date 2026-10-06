@@ -64,7 +64,7 @@
                 <!-- Task 1 -->
                 <div class="task-item">
 
-                    <div class="task-info">
+                    <!-- <div class="task-info">
 
                         <h3>Design TaskFlow Dashboard</h3>
 
@@ -79,7 +79,7 @@
                             <span>Due Date: Oct 3, 2026</span>
                             <span Due Time: 6:00 PM</span>
                         </div>
-                    </div>
+                    </div> -->
                   </div>
 
                 </div>
@@ -109,7 +109,7 @@ const Todolist = JSON.parse(localStorage.getItem('Todolists')) || [];
                         <p>${task.description}</p>
                         <div class="task-details">
                             <span class="priority ${task.priority}">Priority: ${task.priority.charAt(0).toUpperCase() + task.priority.slice(1)}</span>
-                            <span class="task-status pending-status">Status: ${task.status.charAt(0).toUpperCase() + task.status.slice(1)}</span>
+                            <span class="task-status completed-status">Status: ${task.status.charAt(0).toUpperCase() + task.status.slice(1)}</span>
                             <span>Category: ${task.category.charAt(0).toUpperCase() + task.category.slice(1)}</span>
                             <span>Due Date: ${new Date(task.dueDate).toLocaleDateString()}</span>
                             <span>Due Time: ${task.dueTime}</span>
