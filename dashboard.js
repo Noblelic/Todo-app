@@ -3,13 +3,13 @@
 let username = document.querySelector('.Username')
 let icon = document.querySelector('.profile-icon')
 let tast_container = document.querySelector('.task-item')
-let Total = document.querySelector('.Total')
-let pending = document.querySelector('.pending')
+let Total = document.querySelector('#Total')
+let pending = document.querySelector('#pending')
+let completed = document.querySelector('#completed')
 
 
 
-
-
+const Active_user = JSON.parse(localStorage.getItem('Active_user')) ?? []
 const Todolist = JSON.parse(localStorage.getItem('Todolists')) ?? [];
 
 
@@ -61,10 +61,18 @@ Todolist.forEach(function(task){
 });
 
 
+Total.textContent = Todolist.length
+
+let pendingTasks = Todolist.filter(function(task){
+    return task.status === 'pending'
+})
+pending.textContent = pendingTasks.length
+
+let completedTasks = Todolist.filter(function(task){
+    return task.status === 'completed'
+})  
+completed.textContent = completedTasks.length
 
 
-
-
-
-console.log(Todolist)
-
+username.textContent = Active_user.email
+icon.textContent = Active_user.name.charAt(0).toUpperCase()
