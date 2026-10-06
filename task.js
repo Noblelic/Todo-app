@@ -36,6 +36,7 @@ addTaskButton.addEventListener('click', function(e){
     localStorage.setItem('Todolists', JSON.stringify(Todolist));
     taskForm.reset();
     alert('Task added successfully!');
+    window.location.href = 'dashboard.html';
 });
 
 
